@@ -37,7 +37,7 @@ public class Contato {
 	private String email;
 	
 	@Column
-//	@Size(min = 12, max = 12)
+//	@Size(min = 1, max = 12)
 	private String celular;
 
 	@Column

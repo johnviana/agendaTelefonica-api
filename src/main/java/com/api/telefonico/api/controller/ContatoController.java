@@ -82,11 +82,11 @@ public class ContatoController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 	
-	@GetMapping("/favoritos")
-    public ResponseEntity<List<Contato>> listarContatosFavoritos() {
-        List<Contato> contatos = contatoService.listarContatosFavoritos();
-        return new ResponseEntity<>(contatos, HttpStatus.OK);
-    }
+//	@GetMapping("/favoritos")
+//    public ResponseEntity<List<Contato>> listarContatosFavoritos() {
+//        List<Contato> contatos = contatoService.listarContatosFavoritos();
+//        return new ResponseEntity<>(contatos, HttpStatus.OK);
+//    }
 	@GetMapping("/nome")
 	public List<Contato> contatoPorNome(String nome){
 		return contatoRepository.findByNomeContaining(nome);
